@@ -1,9 +1,16 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
   return (
-    <header>
-      header
+    <header className='py-8 xl:py-12 text-white'>
+      <div className='container mx-auto'>
+        <Link href="/">
+        <h1 className='text-4xl font-semibold'>
+            Shahriar<span className='text-accent'>..</span>
+        </h1>
+        </Link>
+      </div>
     </header>
   )
 }
