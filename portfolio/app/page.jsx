@@ -1,3 +1,4 @@
+import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -24,11 +25,15 @@ const Home = () => {
               professionally.
             </p>
             {/* btn and social icons */}
-            <div>
-              <Button>
+            <div className="flex flex-col xl:flex-row items-center gap-8">
+              <Button className="uppercase flex items-center gap-2">
                 <span>Download CV</span>
-                <FiDownload/>
+                <FiDownload className="text-xl"/>
               </Button>
+              {/* socials */}
+              <div className="mb-8 xl:mb-8">
+                <Social/>
+              </div>
             </div>
           </div>
           {/* photo */}
