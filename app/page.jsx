@@ -3,6 +3,7 @@ import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import Services from "./services/page";
 
 const Home = () => {
   return (
@@ -37,7 +38,10 @@ const Home = () => {
           <div className="order-1 xl:order-none mb-8 xl:mb-0"><Photo/></div>
         </div>
       </div>
-      <Stats/>
+      <div><Stats/></div>
+      <div><Services/></div>
+      
+      
     </section>
   );
 };
