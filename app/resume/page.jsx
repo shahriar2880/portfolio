@@ -1,11 +1,10 @@
-import React from 'react'
-
+"use client"
 const Resume = () => {
   return (
-    <div className='container mx-auto'>
-      Resume
-    </div>
-  )
-}
+    <section>
+      <div className="container mx-auto">Resume</div>
+    </section>
+  );
+};
 
-export default Resume
+export default Resume;

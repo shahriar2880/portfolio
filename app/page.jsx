@@ -4,6 +4,7 @@ import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Services from "./services/page";
+import Resume from "./resume/page";
 
 const Home = () => {
   return (
@@ -40,8 +41,7 @@ const Home = () => {
       </div>
       <div><Stats/></div>
       <div><Services/></div>
-      
-      
+      <div><Resume/></div>
     </section>
   );
 };
