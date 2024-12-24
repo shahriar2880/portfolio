@@ -59,7 +59,41 @@ const about = {
   ]
 
  }
- 
+
+ //education data
+ const education = {
+  icon: '/images/graduation-hat.png',
+  title: "My Education",
+  description: "I am a skilled web developer with a strong foundation in Next.Js, ReactJs, and other modern technologies. I possess excellent problem-solving and communication skills, enabling me to effectively collaborate with teams and deliver high-quality projects.",
+  items: [
+    {
+      institute:"Daffodil International University",
+      exam_Title:"B.Sc in Software Engineering",
+      major:"Software Engineering",
+      result: "3.46",
+      passing_year: "2024",
+      duration: "4 years",
+    },
+    {
+      institute:"Cantonment Public School & College, Saidpur",
+      exam_Title:"HSC",
+      major:"Science",
+      result: "4.17",
+      passing_year: "2018",
+      duration: "2",
+    },
+    {
+      institute:"Ruhia High School",
+      exam_Title:"SSC",
+      major:"Science",
+      result: "5.00",
+      passing_year: "2016",
+      duration: "-",
+    },
+  ]
+
+ }
+
 const Resume = () => {
   return (
     <section className="">
