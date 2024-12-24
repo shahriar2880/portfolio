@@ -20,6 +20,10 @@ const about = {
       fieldValue: "1.5+ Years",
     },
     {
+      fieldName: "Facebook",
+      fieldValue: "https://www.facebook.com/shahriar.reza.35/",
+    },
+    {
       fieldName: "Skype",
       fieldValue: "live:shahriarreza436",
     },
@@ -33,6 +37,7 @@ const about = {
     },
   ]
 }
+
 const Resume = () => {
   return (
     <section className="">
