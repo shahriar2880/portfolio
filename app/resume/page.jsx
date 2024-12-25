@@ -94,6 +94,50 @@ const about = {
 
  }
 
+ //skills data
+ //experience data
+ const skills = {
+  icon: '/images/verify.png',
+  title: "My Skills",
+  description: "I am a skilled web developer with a strong foundation in Next.Js, ReactJs, and other modern technologies. I possess excellent problem-solving and communication skills, enabling me to effectively collaborate with teams and deliver high-quality projects.",
+  skillList: [
+    {
+      icon:<FaHtml5/>,
+      name:"html 5",
+    },
+    {
+      icon:<FaCss3/>,
+      name:"Css",
+    },
+    {
+      icon:<FaJs/>,
+      name:"Js",
+    },
+    {
+      icon:<FaReact/>,
+      name:"React.js",
+    },
+    {
+      icon:<FaFigma/>,
+      name:"Figma",
+    },
+    {
+      icon:<FaNodeJs/>,
+      name:"Node.js",
+    },
+    {
+      icon:<SiNextdotjs/>,
+      name:"Next.js",
+    },
+    {
+      icon:<SiTailwindcss/>,
+      name:"Tailwind Css",
+    },
+    
+  ]
+
+ }
+
 const Resume = () => {
   return (
     <section className="">
