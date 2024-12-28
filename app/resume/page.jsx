@@ -95,7 +95,6 @@ const about = {
  }
 
  //skills data
- //experience data
  const skills = {
   icon: '/images/verify.png',
   title: "My Skills",
