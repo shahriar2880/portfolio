@@ -137,6 +137,9 @@ const about = {
 
  }
 
+ import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
+ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+
 const Resume = () => {
   return (
     <section className="">
