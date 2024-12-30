@@ -143,9 +143,15 @@ const about = {
 
 const Resume = () => {
   return (
-    <section className="">
-      <div className="container mx-auto">Resume</div>
-    </section>
+    <div className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
+      <div className="container mx-auto">
+        <Tabs>
+          <TabsList>
+            <TabsTrigger></TabsTrigger>
+          </TabsList>
+        </Tabs>
+      </div>
+    </div>
   );
 };
 
