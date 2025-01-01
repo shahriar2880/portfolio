@@ -40,8 +40,9 @@ const Home = () => {
         </div>
       </div>
       <div><Stats/></div>
+{/*       
       <div><Services/></div>
-      <div><Resume/></div>
+      <div><Resume/></div> */}
     </section>
   );
 };
