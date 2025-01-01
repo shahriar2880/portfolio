@@ -156,13 +156,14 @@ const Resume = () => {
   return (
     <div className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
       <div className="container mx-auto">
-        <Tabs>
+        <Tabs className="flex flex-col xl:flex-row gap-[60px]">
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger>Experience</TabsTrigger>
-            <TabsTrigger>Education</TabsTrigger>
-            <TabsTrigger>Skills</TabsTrigger>
-            <TabsTrigger>About Us</TabsTrigger>
+            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="about">About Us</TabsTrigger>
           </TabsList>
+          <div>content</div>
         </Tabs>
       </div>
     </div>
