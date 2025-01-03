@@ -52,7 +52,7 @@ const experience = {
   icon: "/images/verify.png",
   title: "My Experience",
   description:
-    "I am a skilled web developer with a strong foundation in Next.Js, ReactJs, and other modern technologies. I possess excellent problem-solving and communication skills, enabling me to effectively collaborate with teams and deliver high-quality projects.",
+    "I am a highly motivated and results-oriented web developer with 1.5 years of experience in building dynamic and user-friendly web applications. I possess a strong command of front-end technologies including React.js, Next.js, and Bootstrap, enabling me to create visually appealing and interactive user interfaces. My expertise extends to back-end development using Node.js, where I have experience building robust and scalable APIs. I am passionate about clean code, best practices, and delivering high-quality solutions that exceed client expectations.",
   items: [
     {
       company: "Tech Solution Inc.",
@@ -64,6 +64,27 @@ const experience = {
       position: "Web Developer",
       duration: "2023-Present",
     },
+    {
+      company: "Tech Solution Inc.",
+      position: "Front End Developer - Intern",
+      duration: "Fall-2023",
+    },
+    {
+      company: "Web Design Stdio",
+      position: "Web Developer",
+      duration: "2023-Present",
+    },
+    {
+      company: "Tech Solution Inc.",
+      position: "Front End Developer - Intern",
+      duration: "Fall-2023",
+    },
+    {
+      company: "Web Design Stdio",
+      position: "Web Developer",
+      duration: "2023-Present",
+    },
+
   ],
 };
 
@@ -166,7 +187,30 @@ const Resume = () => {
           {/* content */}
           <div className="min-h-[70vh] w-full">
           {/* experience */}
-          <TabsContent value="experience" className="w-full">experience</TabsContent>
+          <TabsContent value="experience" className="w-full">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <h3 className="text-4xl font-bold">{experience.title}</h3>
+              <p className="max-w-[680px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+              <ScrollArea className="h-[400px]">
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  {
+                    experience.items.map((item, index)=>{
+                      return(
+                        <li key={index} className="bg-[#252329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                          <span className="text-accent">{item.duration}</span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                          <div className="flex items-center gap-3">
+                            <span className="w-[6px] h-[6px] rounded-full"></span>
+                            <p className="text-white/60">{item.company}</p>
+                          </div>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </ScrollArea>
+            </div>
+          </TabsContent>
           {/* education */}
           <TabsContent value="education" className="w-full">education</TabsContent>
           {/* experience */}
