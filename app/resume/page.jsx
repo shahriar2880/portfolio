@@ -109,7 +109,7 @@ const education = {
       major: "Science",
       result: "4.17",
       passing_year: "2018",
-      duration: "2",
+      duration: "-",
     },
     {
       institute: "Ruhia High School",
@@ -212,9 +212,35 @@ const Resume = () => {
             </div>
           </TabsContent>
           {/* education */}
-          <TabsContent value="education" className="w-full">education</TabsContent>
+          <TabsContent value="education" className="w-full">
+          <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <h3 className="text-4xl font-bold">{education.title}</h3>
+              <p className="max-w-[680px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+              <ScrollArea className="h-[286px]">
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  {
+                    education.items.map((item, index)=>{
+                      return(
+                        <li key={index} className="bg-[#252329] h-[mx-auto] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                          <span className="text-accent">{item.major}</span>
+                          <span className="text-accent">{item.result}</span>
+                          <span className="text-accent">{item.passing_year}</span>
+                          <span className="text-accent">{item.duration}</span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.exam_Title}</h3>
+                          <div className="flex items-center gap-3">
+                            <span className="w-[6px] h-[6px] rounded-full"></span>
+                            <p className="text-white/60">{item.institute}</p>
+                          </div>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </ScrollArea>
+            </div>
+          </TabsContent>
           {/* experience */}
-          <TabsContent value="skills" className="w-full">skills</TabsContent>
+          <TabsContent value="skills" className="w-full h-full">skills</TabsContent>
           {/* experience */}
           <TabsContent value="about" className="w-full">about</TabsContent>
           </div>
