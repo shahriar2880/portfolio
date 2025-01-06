@@ -1,5 +1,4 @@
-import React from 'react'
-
+"use client"
 const Work = () => {
   return (
     <div className='container mx-auto'>
