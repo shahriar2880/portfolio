@@ -21,7 +21,7 @@ const projects = [
     category: "frontend",
     title: "project 1",
     description:
-      "I'm a highly motivated individual driven to build a successful career in [Your Industry]. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
+      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "",
     live: "",
@@ -32,7 +32,7 @@ const projects = [
     category: "fullstack",
     title: "project 2",
     description:
-      "I'm a highly motivated individual driven to build a successful career in [Your Industry]. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
+      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
     stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Javascript" }],
     image: "",
     live: "",
@@ -43,7 +43,7 @@ const projects = [
     category: "fullstack",
     title: "project 3",
     description:
-      "I'm a highly motivated individual driven to build a successful career in [Your Industry]. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
+      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
     stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Javascript" }],
     image: "",
     live: "",
@@ -54,7 +54,7 @@ const projects = [
     category: "fullstack",
     title: "project 4",
     description:
-      "I'm a highly motivated individual driven to build a successful career in [Your Industry]. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
+      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
     stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Javascript" }],
     image: "",
     live: "",
