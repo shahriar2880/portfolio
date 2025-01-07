@@ -70,10 +70,26 @@ const Work = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div>
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-accent">{project.num}</div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category}</h2>
+              <div className="text-8xl leading-none font-extrabold text-cyan-500 text-outline">
+                {project.num}
+              </div>
+              {/* project category */}
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                {project.category}
+              </h2>
               {/* project decription */}
               <p className="text-white/60">{project.description}</p>
+              <ul className="flex gap-4">
+                {project.stack.map((item, index) => {
+                  return (
+                    <li className="text-xl text-accent" key={index}>
+                      {item.name}
+                      {/* remove the last comma */}
+                      {index !== project.stack.length - 1 && ","}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </div>
           <div className="w-full xl:w-[50%] ">slider</div>
