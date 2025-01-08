@@ -94,12 +94,15 @@ const Work = () => {
               <div className="border border-white/20 "></div>
               {/* buttons */}
               <div>
-                <Link href="">
+                <Link href={project.github}>
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger>
                         <BsArrowUpRight/>
                       </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Live Project</p>
+                      </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
