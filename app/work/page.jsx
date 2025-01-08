@@ -91,6 +91,19 @@ const Work = () => {
                 })}
               </ul>
               {/* border */}
+              <div className="border border-white/20 "></div>
+              {/* buttons */}
+              <div>
+                <Link href="">
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <BsArrowUpRight/>
+                      </TooltipTrigger>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="w-full xl:w-[50%] ">slider</div>
