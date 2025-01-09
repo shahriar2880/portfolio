@@ -68,7 +68,7 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div>
+            <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-cyan-500 text-outline">
                 {project.num}
@@ -93,7 +93,7 @@ const Work = () => {
               {/* border */}
               <div className="border border-white/20 "></div>
               {/* buttons */}
-              <div>
+              <div className="flex items-center gap-4">
                 {/* live project button */}
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
