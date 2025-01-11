@@ -14,6 +14,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
