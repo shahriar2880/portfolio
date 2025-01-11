@@ -152,7 +152,7 @@ const Work = () => {
                 );
               })}
               {/*slider buttons */}
-              
+              <WorkSliderBtns/>
             </Swiper>
           </div>
         </div>
