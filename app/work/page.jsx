@@ -153,7 +153,7 @@ const Work = () => {
                 );
               })}
               {/*slider buttons */}
-              <WorkSliderBtns/>
+              <WorkSliderBtns containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22PX)] XL:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"/>
             </Swiper>
           </div>
         </div>
