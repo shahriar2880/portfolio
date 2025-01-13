@@ -72,7 +72,7 @@ const Work = () => {
     setProject(projects[currentIndex]);
   };
   return (
-    <div className="min-h-[80vh] flex flex-col justify-center py-12 px-4 xl:px-0">
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 px-4 xl:px-0">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
@@ -153,12 +153,12 @@ const Work = () => {
                 );
               })}
               {/*slider buttons */}
-              <WorkSliderBtns containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22PX)] XL:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"/>
+              <WorkSliderBtns containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] XL:bottom-0 z-10 w-full justify-between xl:w-max xl:justify-none"/>
             </Swiper>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
