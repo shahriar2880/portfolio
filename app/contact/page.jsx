@@ -30,10 +30,20 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form>form</form>
+            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <p className="text-white/60">lorem10</p>
+              {/* input */}
+              <div>
+                <input type='firstname' placeholder="First Name"/>
+                <input type='lastname' placeholder="Last Name"/>
+                <input type='email' placeholder="Email Address"/>
+                <input type='phone' placeholder="Phone Number"/>
+              </div>
+            </form>
           </div>
           {/* info */}
-          <div>info</div>
+          <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">info</div>
         </div>
       </div>
     </section>
