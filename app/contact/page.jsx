@@ -31,7 +31,7 @@ const Contact = () => {
           {/* form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent text-center">Let's work together</h3>
               <p className="text-white/60">lorem10</p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -55,6 +55,8 @@ const Contact = () => {
               </Select>
               {/* text area */}
               <Textarea className="h-[200px]" placeholder="Type your message here..."/>
+              {/* btn */}
+              <Button size="md" className="max-w-40 h-12">Send Message</Button>
             </form>
           </div>
           {/* info */}
