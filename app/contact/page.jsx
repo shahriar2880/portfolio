@@ -31,7 +31,9 @@ const info = [
     description: "6/E, Bash Bari , Mohammadpur",
   },
 ];
+
 const Contact = () => {
+  
   return (
     <section className="py-6">
       <div className="container mx-auto">
