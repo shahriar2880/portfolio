@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
+
 const info = [
   {
     icon: <FaPhoneAlt />,
