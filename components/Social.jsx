@@ -4,10 +4,10 @@ import React from 'react'
 import {FaFacebook, FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa"
 
 const socials = [
-    {icon: <FaGithub/>, path:""},
-    {icon: <FaLinkedin/>, path:""},
-    {icon: <FaFacebook/>, path:""},
-    {icon: <FaTwitter/>, path:""},
+    {icon: <FaGithub/>, path:"https://github.com/shahriar2880"},
+    {icon: <FaLinkedin/>, path:"https://www.linkedin.com/in/srshahriar/"},
+    {icon: <FaFacebook/>, path:"https://www.facebook.com/shahriar.reza.35/"},
+    // {icon: <FaTwitter/>, path:""},
 ];
 
 
@@ -16,7 +16,7 @@ const Social = ({containerStyle, iconStyles}) => {
     <div className={containerStyle}>
       {
         socials.map((item, index)=>{
-            return <Link key={index} href={item.path} className={iconStyles} >{item.icon}</Link>
+            return <Link key={index} href={item.path} className={iconStyles} target='_blank'>{item.icon}</Link>
         })
       }
     </div>

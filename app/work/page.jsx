@@ -41,14 +41,14 @@ const projects = [
   },
   {
     num: "03",
-    category: "fullstack",
+    category: "Frontend",
     title: "project 3",
     description:
       "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Javascript" }],
-    image: "/images/work-2.png",
-    live: "",
-    github: "",
+    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
+    image: "/images/work-3.png",
+    live: "https://calculator-omega-rouge-72.vercel.app",
+    github: "https://github.com/shahriar2880/calculator",
   },
   {
     num: "04",
@@ -103,20 +103,20 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Live Project</p>
+                        <p >Live Project</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
