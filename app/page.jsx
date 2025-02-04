@@ -7,6 +7,7 @@ import Services from "./services/page";
 import Resume from "./resume/page";
 
 const Home = () => {
+  const pdf ='/CV_Of_Shahriar_Reza_Shakil(swe).pdf'
   return (
     <section className="h-full min-w-[320px]">
       <div className="container mx-auto h-full px-4 sm:px-6 lg:px-8">
@@ -25,10 +26,10 @@ const Home = () => {
             </p>
             {/* btn and social icons */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button varient="outline" size="lg" className="uppercase flex items-center gap-2">
+              <a href={pdf} download={pdf} varient="outline" size="lg" className="uppercase flex items-center gap-2 bg-blue-800 rounded-full p-2" style={{ textDecoration: 'none' }} >
                 <span>Download CV</span>
                 <FiDownload className="text-xl"/>
-              </Button>
+              </a>
               {/* socials */}
               <div className="mb-8 xl:mb-0">
                 <Social containerStyle="flex gap-6" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"/>
