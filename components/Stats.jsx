@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
 const stats = [
@@ -16,19 +17,32 @@ const stats = [
         text: "Technologies mastered"
     },
     {
-        num: 420,
+        num: 500,
         text: "Code commits"
     },
 
 
 ];
 const Stats = () => {
+    const [commits, setCommits] = useState(stats[3].num);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCommits((prevCommits) => prevCommits + 1);
+    }, 3600000); // 3600000 milliseconds = 1 hour
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
+  const updatedStats = stats.map((stat, index) => 
+    index === 3 ? { ...stat, num: commits } : stat
+  );
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0" >
       <div className='container mx-auto'>
         <div className="flex flex-wrap  gap-3 min-w-[70vw] mx-auto xl:max-w-none">
             {
-                stats.map((item, index)=>{
+                updatedStats.map((item, index)=>{
                     return (
                         <div className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
                         key={index}>
