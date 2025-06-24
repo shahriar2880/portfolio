@@ -19,48 +19,38 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "fullstack",
+    title: "UniDrive - AI-Enhanced Car Rental Platform",
     description:
-      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "A user-friendly car rental platform offering real-time vehicle availability, dynamic pricing, and seamless booking with AI-enhanced UX features.",
+    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "Express.js" },{ name: "MongoDB" },{ name: "Tailwind CSS" },{ name: "Firebase Auth" }],
     image: "/images/work-2.png",
-    live: "",
-    github: "",
+    live: "https://uni-drive-client.vercel.app/",
+    github: "https://github.com/shahriar2880/uni-drive-client",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
+    category: "Front-end",
+    title: "Tour Dojo - Tour Management Web Platform",
     description:
-      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Javascript" }],
-    image: "/images/work-2.png",
+      "A featured tour and travel management web application designed to help users explore, book, and manage travel experiences effortlessly.",
+    stack: [{ name: "React.js" }, { name: "Bootstrap" }, { name: "React Icons" }, { name: "React Datepicker" }],
+    image: "/images/work-3.png",
     live: "",
     github: "",
   },
   {
     num: "03",
-    category: "Frontend",
-    title: "project 3",
+    category: "Front-end",
+    title: "Software Socket.io – Startup Landing Page",
     description:
-      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
+      "A sleek and responsive landing page built to showcase startup services with modern UI/UX design and interactive animations.",
+    stack: [{ name: "React.js" }, { name: "Tailwind CSS" }, { name: "Swiper.js" }],
     image: "/images/work-3.png",
     live: "https://calculator-omega-rouge-72.vercel.app",
     github: "https://github.com/shahriar2880/calculator",
   },
-  {
-    num: "04",
-    category: "fullstack",
-    title: "project 4",
-    description:
-      "I'm a highly motivated individual driven to build a successful career in Software Industry. I'm constantly seeking new challenges and opportunities to learn and grow. I believe in the power of hard work, dedication, and continuous learning.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind" }, { name: "Javascript" }],
-    image: "/images/work-2.png",
-    live: "",
-    github: "",
-  },
+  
 ];
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -71,6 +61,7 @@ const Work = () => {
     //update project state based on current slide index
     setProject(projects[currentIndex]);
   };
+  
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 px-4 xl:px-0">
       <div className="container mx-auto">
