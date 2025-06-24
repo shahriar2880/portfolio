@@ -46,7 +46,7 @@ const projects = [
     description:
       "A sleek and responsive landing page built to showcase startup services with modern UI/UX design and interactive animations.",
     stack: [{ name: "React.js" }, { name: "Tailwind CSS" }, { name: "Swiper.js" }],
-    image: "/images/work-3.png",
+    image: "/images/work-4.png",
     live: "shahriar-startup-agency.vercel.app
     github: "https://github.com/shahriar2880/startup-agency",
   },
