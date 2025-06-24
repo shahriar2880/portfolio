@@ -36,8 +36,8 @@ const projects = [
       "A featured tour and travel management web application designed to help users explore, book, and manage travel experiences effortlessly.",
     stack: [{ name: "React.js" }, { name: "Bootstrap" }, { name: "React Icons" }, { name: "React Datepicker" }],
     image: "/images/work-3.png",
-    live: "",
-    github: "",
+    live: "https://tour-diyo.vercel.app/",
+    github: "https://github.com/shahriar2880/tour-diyo",
   },
   {
     num: "03",
@@ -47,8 +47,8 @@ const projects = [
       "A sleek and responsive landing page built to showcase startup services with modern UI/UX design and interactive animations.",
     stack: [{ name: "React.js" }, { name: "Tailwind CSS" }, { name: "Swiper.js" }],
     image: "/images/work-3.png",
-    live: "https://calculator-omega-rouge-72.vercel.app",
-    github: "https://github.com/shahriar2880/calculator",
+    live: "shahriar-startup-agency.vercel.app
+    github: "https://github.com/shahriar2880/startup-agency",
   },
   
 ];
